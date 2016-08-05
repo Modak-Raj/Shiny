@@ -1,7 +1,7 @@
 library(shiny)
 
 shinyUI(
-        navbarPage("Motor Trend Dataset",
+        navbarPage("Motor Trend car-data Insights",
                    tabPanel("Detail",
                             h2("Motor Trend Car Road Tests"),
                             hr(),
@@ -62,7 +62,10 @@ shinyUI(
                                             )
                                     )
                             )
-                  
+                   ),
+                   tabPanel("SourceCode",
+                            p("Source Code on GitHub"),
+                            a("https://github.com/Modak-Raj/Shiny")
                    )
         )
 )
